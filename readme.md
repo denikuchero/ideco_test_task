@@ -28,9 +28,11 @@
 * код, расположенный на git-репозитории (например, github).
 
 ---------------------------------
+Реализованно на работе сервиса nginx
+
 sudo apt-get update
 sudo apt-get install nginx
 
-sudo systemctl start nginx
-sudo systemctl stop nginx
-sudo systemctl restart nginx
+Старт сервиса python3.8 server.py
+Running on http://0.0.0.0:8080 
+
