@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}
+Posts index
+{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-center">
+  <div class="col-md-5">
+
+  <div class="row">
+
+        {% for post in posts %}
+        <h1>Статус запуска: {{ post.status }} </h1>
+      {% endfor %}
+  </div>
+</div>
+</div>
+<div class="d-flex justify-content-center text-center">
+
+
+  <a href="/start"><button type="button" class="btn btn-primary btn-lg">Запустить</button></a>  &nbsp;&nbsp;
+<a href="/restart"><button type="button"  disabled="disabled" class="btn btn-primary btn-lg">Перезапустить</button></a> &nbsp;&nbsp;
+<a href="/stop"><button type="button"  disabled="disabled" class="btn btn-primary btn-lg">Остановить</button></a> &nbsp;&nbsp;
+
+
+
+</div>
+<hr>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
